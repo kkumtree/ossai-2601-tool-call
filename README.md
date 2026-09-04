@@ -14,9 +14,9 @@ AI 챗봇 구성 시도를 했었습니다.
 다만, 아래와 같이 경량형 Local LLM 양대 산맥인 Qwen / Gemma 를 다 써보고, 
 자연어 프롬프팅으로만 가드레일을 넣다보니 제어가 쉽지 않았습니다. 
 
-<img width="899" height="1078" alt="Screenshot From 2026-09-04 15-22-07" src="https://github.com/user-attachments/assets/97a5cedc-173a-4a4b-afe5-7182ee155694" />
+<img width="899" height="1078" alt="Screenshot From 2026-09-04 15-22-07" src="https://github.com/user-attachments/assets/97a5cedc-173a-4a4b-afe5-7182ee155694" /><br />
 (한국어 출력 기대값과 달리 혼용되어 출력)
-<img width="820" height="788" alt="Screenshot From 2026-09-04 16-19-02" src="https://github.com/user-attachments/assets/5bbc08a5-16fd-4f4b-a2bb-9c6c55a214cf" />
+<img width="820" height="788" alt="Screenshot From 2026-09-04 16-19-02" src="https://github.com/user-attachments/assets/5bbc08a5-16fd-4f4b-a2bb-9c6c55a214cf" /><br />
 (자연어 프롬프팅 가드레일로 모델 숨김 어려움)
 
 이번 과정에 참여하면서, 많은 시간을 투여하지 못했으나 
