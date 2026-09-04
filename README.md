@@ -153,7 +153,7 @@ To-Be의 저장된 결과에서 `allow`는 중앙 0.927초(가드 0.257초 + 답
 - 기존 RAG 검색에 대한 tool-call 구성을 하여 파이프라인을 보강할 계획입니다. 
 - 자기소개 예외처리를 하면서, 시나리오 봇과 유사하다는 느낌이 강했습니다. 자기소개 tool-call 단계에서도 부수적인 가드레일 tool-call 이 필요함을 결과 분석을 통해 깨달을 수 있었습니다.
 
-<img width="799" height="925" alt="Screenshot From 2026-09-04 16-41-28" src="https://github.com/user-attachments/assets/66704cde-c2a0-4e62-bf4c-105568238b9f" />
+<img width="799" height="925" alt="Screenshot From 2026-09-04 16-41-28" src="https://github.com/user-attachments/assets/66704cde-c2a0-4e62-bf4c-105568238b9f" /><br />
 (과도한 제어로 인한 출력 거절)
 
 - Colab 등을 활용하여, 응답 값에 대한 일관적인 지표 파악의 중요성을 눈으로 직접 볼 수 있었습니다. 
