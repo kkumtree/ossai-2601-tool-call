@@ -1,5 +1,7 @@
 # 오픈소스 AI·SW 활용 인재 양성 과정 - 온프레미스 경량 LLM 에이전트 개발·검증
 
+- 주관: 오픈소스 통합지원센터 [OpenUP](https://www.oss.kr/) / [오픈소스 AI·SW 개발자 커뮤니티](https://www.aioss.ac/)  
+
 > Disclaimer: 3항 ~ 8항 까지는 Colab 구동 결과를 기반으로 OpenAI Codex CLI의 도움을 받았습니다. 
 
 ## 1. Intro
@@ -7,10 +9,15 @@
 이상기후로 인한 이재민 뉴스를 접하다보니 이상기후와 기후변화에 관해 설명해줄 
 AI 챗봇 구성 시도를 했었습니다. 
 
-- GTX 1660 Super 한장을 끼우고, 관련 지식에 대한 RAG를 만들어 작동을 시도 
+- GTX 1660 Super 한장을 끼우고, 관련 지식에 대한 RAG를 만들어 작동을 시도  
 
 다만, 아래와 같이 경량형 Local LLM 양대 산맥인 Qwen / Gemma 를 다 써보고, 
 자연어 프롬프팅으로만 가드레일을 넣다보니 제어가 쉽지 않았습니다. 
+
+<img width="899" height="1078" alt="Screenshot From 2026-09-04 15-22-07" src="https://github.com/user-attachments/assets/97a5cedc-173a-4a4b-afe5-7182ee155694" />
+(한국어 출력 기대값과 달리 혼용되어 출력)
+<img width="820" height="788" alt="Screenshot From 2026-09-04 16-19-02" src="https://github.com/user-attachments/assets/5bbc08a5-16fd-4f4b-a2bb-9c6c55a214cf" />
+(자연어 프롬프팅 가드레일로 모델 숨김 어려움)
 
 이번 과정에 참여하면서, 많은 시간을 투여하지 못했으나 
 예기치 못한 답변에 대해 효과적인 방지를 할 수 있는 방법을 이해할 수 있었습니다. 
@@ -144,6 +151,10 @@ To-Be의 저장된 결과에서 `allow`는 중앙 0.927초(가드 0.257초 + 답
 ## 9. To-Do 및 느낀점  
 
 - 기존 RAG 검색에 대한 tool-call 구성을 하여 파이프라인을 보강할 계획입니다. 
-- 자기소개 예외처리를 하면서, 시나리오 봇과 유사하다는 느낌이 강했습니다. 자기소개 tool-call 단계에서도 부수적인 가드레일 tool-call 이 필요함을 결과 분석을 통해 깨달을 수 있었습니다. 
+- 자기소개 예외처리를 하면서, 시나리오 봇과 유사하다는 느낌이 강했습니다. 자기소개 tool-call 단계에서도 부수적인 가드레일 tool-call 이 필요함을 결과 분석을 통해 깨달을 수 있었습니다.
+
+<img width="799" height="925" alt="Screenshot From 2026-09-04 16-41-28" src="https://github.com/user-attachments/assets/66704cde-c2a0-4e62-bf4c-105568238b9f" />
+(과도한 제어로 인한 출력 거절)
+
 - Colab 등을 활용하여, 응답 값에 대한 일관적인 지표 파악의 중요성을 눈으로 직접 볼 수 있었습니다. 
 - 자연어 처리 결과에 대한 json이 규칙적이지 않았었는데, 이번 과정을 통해, 응답 값에 대한 정규화를 얻을 수 있었습니다.  
